@@ -1,4 +1,3 @@
--- Add your sql here
 SELECT c.customer_name AS Customer,
 	PRINTF('$%.2f', SUM(s.price_per_month * s.subscription_length)) AS 'Amount Due'
 FROM orders o
